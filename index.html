@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEDRO DESIGN</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#817d41; }
+    header { background:rgb(1, 4, 163); color:hsl(0, 20%, 95%); padding:20px; text-align:center; }
+    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; transition:0.3s; }
+    nav a:hover { color:#39e647; }
+    .hero { background:#faf8f9; color:#0f0f0f; padding:60px; text-align:center; animation: fadeIn 2s ease-in; }
+    .hero h2 { font-size:2.5em; }
+    .section { padding:40px; text-align:center; animation: fadeInUp 1.5s ease-in; }
+    .section h2 { color:#040486; margin-bottom:20px; }
+    .grid { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+    .card { background:rgb(243, 243, 245); padding:20px; border-radius:8px; box-shadow:0 2px 5px rgb(250, 247, 247); width:250px; transition:0.3s; }
+    .card img { width:100%; border-radius:8px; }
+    .card:hover { transform: translateY(-5px); box-shadow:0 4px 10px rgb(4, 1, 153); }
+    footer { background:rgb(2, 2, 161); color:#0f0f0f; padding:20px; text-align:center; }
+    .btn { display:inline-block; background:#000; color:#fff; padding:12px 25px; text-decoration:none; border-radius:5px; font-weight:bold; transition:0.3s; }
+    .btn:hover { background:#39e647; color:#141414; transform:scale(1.05); }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity:0; }
+      to { opacity:1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity:0; transform: translateY(30px); }
+      to { opacity:1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>PEDRO DESIGN</h1>
+    <nav>
+      <a href="#Biografia">Biografia</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#pessoais">Minhas Imagens</a>
+      <a href="#companheiros">Companheiros</a>
+      <a href="#testemunhos">Testemunhos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Transformando sonhos em design criativo</h2>
+    <p>Sua visão, sua marca, seu estilo.</p>
+    <a href="#contato" class="btn">Fale comigo</a>
+  </section>
+  
+  <!-- Biografia -->
+  <section id="Biografia" class="section">
+    <h2>Biografia</h2>
+    <p>Pedro, jovem de 17 anos nascido em Angola, estudante do curso de Informática de Gestão. 
+    Apaixonado por design gráfico por influência dos colegas Paulino Jacinto, Esmael Casseno e Teodoro Viki. 
+    Experiência em criação de flayers, capas, panfletos, cartões personalizados e logotipos, além de web design.</p>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section">
+    <h2>Serviços</h2>
+    <div class="grid">
+      <div class="card">Flayers criativos</div>
+      <div class="card">Capas e panfletos</div>
+      <div class="card">Cartões personalizados</div>
+      <div class="card">Logotipos profissionais</div>
+      <div class="card">Web Design</div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section id="portfolio" class="section">
+    <h2>Portfólio</h2>
+    <p>Veja alguns dos meus trabalhos:</p>
+    <div class="grid">
+      <div class="card">
+        <img src="img/meu flier joker.png" alt="Projeto 1">
+        <p>Projeto 1 - Flyer criativo</p>
+      </div>
+      <div class="card">
+        <img src="img/IMG-20250911-WA0016.jpg" alt="Projeto 2">
+        <p>Projeto 2 - Logotipo</p>
+      </div>
+      <div class="card">
+        <img src="img/ESQUECE.png" alt="Projeto 3">
+        <p>Projeto 3 - Cartão personalizado</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minhas Imagens Pessoais -->
+  <section id="pessoais" class="section">
+    <h2>Minhas Imagens Pessoais</h2>
+    <p>Aqui você pode conhecer um pouco mais sobre mim:</p>
+    <div class="grid">
+      <div class="card">
+        <img src="img/IMG_5771.JPG" alt="Pedro pessoal 1">
+        <p>Pedro em ação criativa</p>
+      </div>
+      <div class="card">
+        <img src="img/IMG_20250802_131724~2.jpg" alt="Pedro pessoal 2">
+        <p>Pedro em evento de design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companheiros -->
+  <section id="companheiros" class="section">
+    <h2>Companheiros de jornada</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/20251110_113910.jpg" alt="Paulino Jacinto">
+        <p><strong>Paulino Jacinto</strong><br>Influência e inspiração no design.</p>
+      </div>
+      <div class="card">
+        <img src="img/IMG_5767.JPG" alt="Esmael Casseno">
+        <p><strong>Esmael Casseno</strong><br>Parceiro criativo e motivador.</p>
+      </div>
+      <div class="card">
+        <img src="img/20251121_135622.jpg" alt="Teodoro Viki">
+        <p><strong>Teodoro Viki</strong><br>Companheiro de ideias e inovação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testemunhos -->
+  <section id="testemunhos" class="section">
+    <h2>Testemunhos</h2>
+    <div class="grid">
+      <div class="card">"Serviço excelente, recomendo!"</div>
+      <div class="card">"Design criativo e profissional."</div>
+      <div class="card">"Preço acessível e qualidade garantida."</div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>📱 WhatsApp: 972201355</p>
+    <p>📧 E-mail: onesimooness@gmail.com</p>
+    <p>📷 Instagram & Facebook: Pedro Design</p>
+    <p>🎥 TikTok: Onésimo Oness</p>
+    <a href="mailto:onesimooness@gmail.com" class="btn">Enviar e-mail</a>
+    <a href="https://wa.me/244972201355" class="btn">WhatsApp</a>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 PEDRO DESIGN | Designer Geracional | Os teus sonhos também valem</p>
+  </footer>
+</body>
+</html>
